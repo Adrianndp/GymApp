@@ -1,5 +1,9 @@
 venv/
 .env
+
+
+# Packages
+__pycache__
 node_modules
 
 # Custom Section

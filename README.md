@@ -14,6 +14,9 @@ Open 2 terminals...
 - 2 Terminal run:
  inside frontend run: ```npm run dev```
 
+- How does npm run dev works?
+ Scripts in package.json: "dev": "webpack --mode development --watch" : watch for changes in our js files and automatically reblunded
+
 
 # Commands used:
 
@@ -47,9 +50,4 @@ Webpack:
  
 Material UI:   
  (is like a bootstrap...) we also used their icons
- a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch
-
-
-
-Scripts in package.json:
-"dev": "webpack --mode development --watch" : watch for changes in our js files and automatically reblunded
+ a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch.

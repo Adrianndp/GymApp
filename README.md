@@ -1,6 +1,6 @@
 # Run the project:
 
-## Settins:
+## Settings:
 Open 2 terminals...
 - 1 Terminal
  inside GymmApp/GymApp run the command ```python -m venv venv``` and activate it  
@@ -15,8 +15,7 @@ Open 2 terminals...
  inside frontend run: ```npm run dev```
 
 
-
- # Commands used:
+# Commands used:
 
 ## Python Backend
 - ```python -m venv venv```

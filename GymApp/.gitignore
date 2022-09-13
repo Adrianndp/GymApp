@@ -1,0 +1,7 @@
+venv/
+.env
+node_modules
+
+# Custom Section
+db.sqlite3
+requirements.txt

@@ -14,7 +14,7 @@ Open 2 terminals...
 - 2 Terminal run:
  inside frontend run: ```npm run dev```
 
-- How does npm run dev works?
+## How does npm run dev works?
  Scripts in package.json: "dev": "webpack --mode development --watch" : watch for changes in our js files and automatically reblunded
 
 

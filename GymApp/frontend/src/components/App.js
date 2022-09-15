@@ -13,6 +13,7 @@ export default class App extends Component {
     render() {
         return (
             <Box width="400px">
+                <Navbar />
                 <HomePage />
                 <Footer />
             </Box>

@@ -19,6 +19,11 @@ body {
   display: flex;
 }
 
+.hamburger_menu{
+  size: large;
+  color: inherit;
+}
+
 .footer{
   margin-top: 1rem;
   padding: 1rem;

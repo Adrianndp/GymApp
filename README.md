@@ -38,6 +38,7 @@ Open 2 terminals...
 - ```npm install @babel/plugin-proposal-class-properties``` (to use async and await in our js code)
 - ```npm install react-router-dom```
 - ```npm install @material-ui/icons``` (THE ICONS)
+- ```npm i --save react-lazy-hero styled-components```
 
 # Tools
 

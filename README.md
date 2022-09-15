@@ -34,7 +34,7 @@ Open 2 terminals...
 - ```npm i webpack webpack-cli --save-dev``` (inside frontend app) built the node modules folder
 - ```npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev```
 - ```npm install --save react@16.13.0 react-dom@16.13.0 --save-dev```
-- ```npm install @material-ui/core```
+- ```npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps```
 - ```npm install @babel/plugin-proposal-class-properties``` (to use async and await in our js code)
 - ```npm install react-router-dom```
 - ```npm install @material-ui/icons``` (THE ICONS)

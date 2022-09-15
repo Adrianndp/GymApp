@@ -7,6 +7,3 @@ node_modules
 
 # Custom Section
 db.sqlite3
-
-# Modules
-main.js

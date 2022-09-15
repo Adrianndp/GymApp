@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { Box } from '@mui/material';
 import { render } from "react-dom";
+import { Navbar } from "./Navbar";
 import { HomePage } from "./HomePage";
+import { Footer } from "./Footer";
 
 export default class App extends Component {
     constructor(props) {
@@ -9,9 +12,10 @@ export default class App extends Component {
 
     render() {
         return (
-            <div>
+            <Box width="400px">
                 <HomePage />
-            </div>
+                <Footer />
+            </Box>
         );
     }
 }

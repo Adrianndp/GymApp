@@ -1,6 +1,6 @@
 # Run the project:
 
-## Settins:
+## Settings:
 Open 2 terminals...
 - 1 Terminal
  inside GymmApp/GymApp run the command ```python -m venv venv``` and activate it  
@@ -14,9 +14,11 @@ Open 2 terminals...
 - 2 Terminal run:
  inside frontend run: ```npm run dev```
 
+## How does npm run dev works?
+ Scripts in package.json: "dev": "webpack --mode development --watch" : watch for changes in our js files and automatically reblunded
 
 
- # Commands used:
+# Commands used:
 
 ## Python Backend
 - ```python -m venv venv```
@@ -48,9 +50,4 @@ Webpack:
  
 Material UI:   
  (is like a bootstrap...) we also used their icons
- a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch
-
-
-
-Scripts in package.json:
-"dev": "webpack --mode development --watch" : watch for changes in our js files and automatically reblunded
+ a library that allows us to import and use different components to create a user interface in our React applications. This saves a significant amount of time since the developers do not need to write everything from scratch.

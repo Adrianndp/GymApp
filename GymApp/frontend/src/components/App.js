@@ -16,7 +16,6 @@ export default class App extends Component {
             <Box width="100%">
                 <Navbar />
                 <HomePage />
-                <Footer />
             </Box>
         );
     }

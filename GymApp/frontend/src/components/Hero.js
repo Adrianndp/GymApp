@@ -3,8 +3,8 @@ import LazyHero from 'react-lazy-hero';
 
 export const Hero = () => {
   return (
-    <LazyHero imageSrc="https://unsplash.it/2000/1000">
-        <h1>Hello World</h1>
+    <LazyHero imageSrc="static/images/hero.webp" minHeight="100vh" opacity="0.7">
+        <h1>Can you feel the Heat?</h1>
     </LazyHero>
   )
 }

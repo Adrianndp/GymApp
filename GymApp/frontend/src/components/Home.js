@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <div>  
       <Hero />
-      <TextBlock /> 
+      <TextBlock title="Example of title" text="Example of a text"/> 
       <Footer />
     </div>
   )

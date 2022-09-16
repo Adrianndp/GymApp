@@ -8,9 +8,9 @@ import { TextBlock } from './TextBlock';
 export const Home = () => {
   return (
     <div>  
+      <Hero />
       <ContactPopper />
       <TextBlock /> 
-      <Hero />
     </div>
   )
 }

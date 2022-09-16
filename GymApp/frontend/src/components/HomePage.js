@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './Home';
-import { Test } from './Test';
+import Test from './Test';
 
 export const HomePage = () => {
   return (

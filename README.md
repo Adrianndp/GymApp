@@ -39,6 +39,8 @@ Open 2 terminals...
 - ```npm install react-router-dom```
 - ```npm install @material-ui/icons``` (THE ICONS)
 - ```npm i --save react-lazy-hero styled-components```
+- ```npm i @splinetool/react-spline --legacy-peer-deps```
+- ```npm i @splinetool/runtime --legacy-peer-deps  ```
 
 # Tools
 

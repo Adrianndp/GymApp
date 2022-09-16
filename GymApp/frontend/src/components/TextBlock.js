@@ -1,17 +1,19 @@
-import React, {useState} from 'react';
-import { Typography } from '@mui/material';
-import Stack from '@mui/material/Stack';
-
+import React from 'react';
+import { Typography, Container, Grid } from '@mui/material';
 
 export const TextBlock = () => {
     return (
-        <div>
+        <Container maxWidth="sm">
             <Typography>
-                <Stack direction="row" spacing={2}>
-                    <h1>Title</h1>
-                    <p>content that is not important . s vj svlkjds vlhs vjsk jksd vs vkj </p>
-                </Stack>
+                <Grid container spacing={2}>
+                    <Grid item xs={4}>
+                        <h1>Title</h1>
+                    </Grid>
+                    <Grid item xs={8}>
+                        <p>content that is not important . s vj svlkjds vlhs vjsk jksd vs vkj </p>
+                    </Grid>
+                </Grid>
             </Typography>
-        </div>
+        </Container>
     );  
 }

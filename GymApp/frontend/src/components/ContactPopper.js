@@ -29,7 +29,7 @@ export const ContactPopper = () => {
         onClose={handleClose}
         anchorOrigin={{
           vertical: 'bottom',
-          horizontal: 'left',
+          horizontal: 'right',
         }}
       >
         <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>

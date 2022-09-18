@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
+// one link for home one for exercise finder one for about us and contact us
+// sign in or login and logout only if logged in
 export const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>

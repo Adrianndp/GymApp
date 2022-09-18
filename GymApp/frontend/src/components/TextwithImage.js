@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Grid } from '@mui/material';
 
-export const TextBlock = (props) => {
+export const TextwithImage = (props) => {
     //pt, pb = padding top and bottom
     return (
             <Typography pt={10} pb={10}>
@@ -10,7 +10,7 @@ export const TextBlock = (props) => {
                         <h1>{props.title}</h1>
                     </Grid>
                     <Grid item md={6}>
-                        <p>{props.text}</p>
+                        <img src={`static/images/${props.image_file_name}`} className="photo"></img>
                     </Grid>
                 </Grid>
             </Typography>

@@ -11,8 +11,7 @@ export const Home = () => {
     <div>  
       <Hero />
       <Container maxWidth="sm">
-        <TextBlock title="Start where you are. Use what you have. Do what you can." text="Start right now doing your gym rutine so you can implement it tomorrow!"/> 
-        <TextBlock title="Design your own rutine!" text="Enough of waiting for personal trainer to fall from the sky. Try out our virtual gym and get ready"/> 
+        <TextBlock title="Design your own rutine!" text="Put image"/> 
         <Button href="test" className='button'>Try it out</Button>
       </Container>
       <Footer />

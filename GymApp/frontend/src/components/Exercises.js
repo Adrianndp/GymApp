@@ -6,7 +6,7 @@ import Exercise from './Exercise';
 export const Exercises = () => {
   return (
     <div>
-    <h1>Exercises by Muscle</h1>
+    <h1>Exercises by Muscle Groups</h1>
         <Typography pt={10} pb={10}>
             <Grid container spacing={4}>
                 <Grid item md={3}>

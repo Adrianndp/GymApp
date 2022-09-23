@@ -10,7 +10,10 @@ Open 2 terminals...
 
 ## Run:
 - 1 Terminal run:
- inside GymmApp/GymApp run ```python manage.py runserver```
+ inside GymmApp/GymApp run 
+ - ```python manage.py makemigrations```
+ - ```python manage.py migrate```
+ - ```python manage.py runserver```
 - 2 Terminal run:
  inside frontend run: ```npm run dev```
 

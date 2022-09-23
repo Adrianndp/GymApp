@@ -1,6 +1,6 @@
 from django.urls import path, include
-from .views import main
+from .views import main, ExerciseView
 
 urlpatterns = [
-    path('', main)
+    path('exercise', ExerciseView.as_view())
 ]

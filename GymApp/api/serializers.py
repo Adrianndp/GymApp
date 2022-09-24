@@ -8,3 +8,8 @@ class ExerciseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercise
         fields = '__all__'
+
+class CreateExerciseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exercise
+        fields = ('title', 'muscle_targeted', 'equipment')

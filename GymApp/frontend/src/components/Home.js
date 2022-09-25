@@ -1,5 +1,5 @@
 // Welcome Page
-import React from 'react'
+import React, {useState, useEffect } from 'react'
 import { Hero } from "./Hero";
 import { TextwithImage } from './TextwithImage';
 import { Footer } from './Footer';
@@ -8,6 +8,12 @@ import { Exercises } from './Exercises';
 
 
 export const Home = () => {
+
+  useEffect(()=>{
+      // here fetch logic only will run once "componentdidmount"
+      console.log("rendered");
+  }, [])
+
   return (
     <div>  
       <Hero />

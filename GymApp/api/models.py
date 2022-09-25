@@ -55,3 +55,7 @@ class Exercise(models.Model):
     muscle_targeted = models.CharField(choices=MuscleTargetedEnum.choices, max_length=255)
     equipment = models.CharField(choices=EquipmentEnum.choices, max_length=255)
     rating = models.FloatField(default=None, null=True, blank=True)
+
+    @property
+    def get_image_file_name(self):
+        return self.title.lower().replace(" ", "-")

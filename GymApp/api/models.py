@@ -36,7 +36,6 @@ class MuscleTargetedEnum(models.TextChoices):
     ABDOMINALS =  _('ABDOMINALS')
     TRICEPS = _('TRICEPS')
     CALVES =  _('CALVES')
-    ABDUCTORS = _('ABDUCTORS')
     MIDDLE_BACK = _('MIDDLE BACK')
     FOREARMS =  _('FOREARMS')
     LOWER_BACK = _('LOWER BACK')

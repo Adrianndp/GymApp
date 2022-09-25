@@ -9,8 +9,8 @@ export const TextwithImage = (props) => {
                     <Grid item md={6}>
                         <h1>{props.title}</h1>
                     </Grid>
-                    <Grid item md={6}>
-                        <img src={`static/images/${props.image_file_name}`} className="photo"></img>
+                    <Grid item md={3}>
+                        photo
                     </Grid>
                 </Grid>
             </Typography>

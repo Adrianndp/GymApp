@@ -54,9 +54,4 @@ class Exercise(models.Model):
     )
     muscle_targeted = models.CharField(choices=MuscleTargetedEnum.choices, max_length=255)
     equipment = models.CharField(choices=EquipmentEnum.choices, max_length=255)
-    image_file = models.CharField(
-        max_length=255,
-        null=True,
-        blank=True,
-    )
     rating = models.FloatField(default=None, null=True, blank=True)

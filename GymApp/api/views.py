@@ -5,6 +5,9 @@ from .models import Exercise
 from .serializers import ExerciseSerializer, CreateExerciseSerializer
 from rest_framework.response import Response
 from rest_framework import status
+from django.views.generic import View
+from .models import MuscleTargetedEnum
+from .models import EquipmentEnum
 
 # Create your views here.
 
@@ -23,3 +26,18 @@ class CreateExerciseView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+class MuscleTargetedList(View):
+
+  def get_list_queryset(self):
+        """Get the queryset."""
+        return MuscleTargetedEnum.list()
+
+
+class EquipmentList(View):
+
+  def get_list_queryset(self):
+        """Get the queryset."""
+        return EquipmentEnum.list()

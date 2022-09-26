@@ -25,6 +25,10 @@ class EquipmentEnum(models.TextChoices):
     MAT = _('MAT')
     OTHER = _('OTHER')
 
+    @staticmethod
+    def list():
+        return list(map(lambda c: c.value, EquipmentEnum))
+
 
 class MuscleTargetedEnum(models.TextChoices):
     BICEPS =  _('BICEPS')
@@ -43,6 +47,10 @@ class MuscleTargetedEnum(models.TextChoices):
     CHEST = _('CHEST')
     TRAPS =  _('TRAPS')
     LATS = _('LATS')
+
+    @staticmethod
+    def list():
+        return list(map(lambda c: c.value, MuscleTargetedEnum))
 
 class Exercise(models.Model):
     """The model of the component Exercise."""

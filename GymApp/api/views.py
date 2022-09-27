@@ -8,6 +8,8 @@ from rest_framework import status
 from django.views.generic import View
 from .models import MuscleTargetedEnum
 from .models import EquipmentEnum
+from django.http import JsonResponse
+
 
 # Create your views here.
 
@@ -29,15 +31,18 @@ class CreateExerciseView(APIView):
 
 
 
-class MuscleTargetedList(View):
+class MuscleTargetedListView(View):
+    def get(self, request):
+        return JsonResponse({'foo':'bar'})
 
-  def get_list_queryset(self):
-        """Get the queryset."""
+    def get_queryset(self):
         return MuscleTargetedEnum.list()
+        
 
 
-class EquipmentList(View):
+class EquipmentListView(View):
 
-  def get_list_queryset(self):
-        """Get the queryset."""
+    def get_queryset(self):
         return EquipmentEnum.list()
+  
+        

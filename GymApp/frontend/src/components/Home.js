@@ -24,7 +24,6 @@ export const Home = () => {
     <div>  
       <Hero />
       <Container maxWidth="sm">
-        {data.map(d => (<li>{d}</li>))} 
         <Typography pt={10} pb={10}>
             <Grid container spacing={2}>
                 <Grid item md={6}>
@@ -38,7 +37,7 @@ export const Home = () => {
         <Box textAlign='center'>
           <Button href="test" className='button'>Try it out</Button>
         </Box>
-        <Exercises />
+        <Exercises muscles={data} />
       </Container>
       <Footer />
     </div>

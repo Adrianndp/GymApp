@@ -3,10 +3,11 @@ import { Typography, Grid } from '@mui/material';
 import Exercise from './Exercise';
 
 
-export const Exercises = () => {
+export const Exercises = (props) => {
   return (
     <div>
     <h1>Exercises by Muscle Groups</h1>
+        {props.muscles.map(d => (<li>{d}</li>))} 
         <Typography pt={10} pb={10}>
             <Grid container spacing={4}>
                 <Grid item md={3}>

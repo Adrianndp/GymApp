@@ -1,9 +1,9 @@
 // Welcome Page
 import React, {useState, useEffect } from 'react'
 import { Hero } from "./Hero";
-import { TextwithImage } from './TextwithImage';
 import { Footer } from './Footer';
 import { Button, Container, Box } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import { Exercises } from './Exercises';
 
 
@@ -25,7 +25,16 @@ export const Home = () => {
       <Hero />
       <Container maxWidth="sm">
         {data.map(d => (<li>{d}</li>))} 
-        <TextwithImage title="Design your own rutine!" image_file_name="workout.jpg"/> 
+        <Typography pt={10} pb={10}>
+            <Grid container spacing={2}>
+                <Grid item md={6}>
+                    <h1>"Design your own rutine!"</h1>
+                </Grid>
+                <Grid item md={3}>
+                    photo
+                </Grid>
+            </Grid>
+        </Typography>
         <Box textAlign='center'>
           <Button href="test" className='button'>Try it out</Button>
         </Box>

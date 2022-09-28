@@ -30,19 +30,11 @@ class CreateExerciseView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
-class MuscleTargetedListView(View):
-    def get(self, request):
-        return JsonResponse({'foo':'bar'})
-
-    def get_queryset(self):
-        return MuscleTargetedEnum.list()
-        
+def muscle_list_view(request):
+    return JsonResponse({'data': MuscleTargetedEnum.list()})
 
 
-class EquipmentListView(View):
-
-    def get_queryset(self):
-        return EquipmentEnum.list()
+def equipment_list_view(request):
+    return JsonResponse({'data': EquipmentEnum.list()})
   
         

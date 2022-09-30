@@ -8,7 +8,8 @@ import { CardActionArea } from '@mui/material';
 export default function Exercise(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea href="api/exercises/chest">
+      
+      <CardActionArea href={`api/exercises/${props.name}`}>
         <CardMedia
           component="img"
           height="140"

@@ -27,8 +27,18 @@ export const Home = () => {
       <Container maxWidth="sm">
         <Typography pt={10} pb={10}>
           <h1 style={{textAlign: "center"}}>Design your own rutine!</h1>
-          photo
         </Typography>
+        <Grid container spacing={2}>
+            <Grid item md={4}>
+                photo 1
+            </Grid>
+            <Grid item md={4}>
+                photo 2
+            </Grid>
+            <Grid item md={4}>
+                photo 3
+            </Grid>
+          </Grid>
         <Box textAlign='center'>
           <Button href="test" className='button'>Try it out</Button>
         </Box>

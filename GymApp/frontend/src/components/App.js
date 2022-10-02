@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Box } from '@mui/material';
 import { Navbar } from "./Navbar";
 import { HomePage } from "./HomePage";
-import { Footer } from "./Footer";
 
 
 export default class App extends Component {

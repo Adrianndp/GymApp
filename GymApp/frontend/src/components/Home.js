@@ -1,7 +1,6 @@
 // Welcome Page
 import React, {useState, useEffect } from 'react'
-import { Hero } from "./Hero";
-import { Footer } from './Footer';
+import LazyHero from 'react-lazy-hero';
 import { Button, Container, Box } from '@mui/material';
 import { Typography, Grid } from '@mui/material';
 import { Exercises } from './Exercises';
@@ -22,24 +21,22 @@ export const Home = () => {
 
   return (
     <div>  
-      <Hero />
+      <LazyHero imageSrc="static/images/hero.webp" minHeight="100vh" opacity="0.7">
+        <h1>Can you feel the Heat?</h1>
+      </LazyHero>
       <Container maxWidth="sm">
         <Typography pt={10} pb={10}>
-            <Grid container spacing={2}>
-                <Grid item md={6}>
-                    <h1>"Design your own rutine!"</h1>
-                </Grid>
-                <Grid item md={3}>
-                    photo
-                </Grid>
-            </Grid>
+          <h1 style={{textAlign: "center"}}>Design your own rutine!</h1>
+          photo
         </Typography>
         <Box textAlign='center'>
           <Button href="test" className='button'>Try it out</Button>
         </Box>
         <Exercises muscles={data} />
       </Container>
-      <Footer />
+      <div className="footer">
+        <p style={{color: "gray"}}>2022 Gymwolf Blog. Built using Django with React.</p>
+      </div>
     </div>
   )
 }

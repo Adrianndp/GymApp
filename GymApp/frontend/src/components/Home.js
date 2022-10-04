@@ -25,21 +25,10 @@ export const Home = () => {
         <h1>Can you feel the Heat?</h1>
       </LazyHero>
       <Container maxWidth="sm">
-        <Typography pt={10} pb={10}>
-          <h1 style={{textAlign: "center"}}>Design your own rutine!</h1>
+        <Typography pt={10}>
+          <h1 style={{textAlign: "center"}}>Design your own routine!</h1>
         </Typography>
-        <Grid container spacing={2}>
-            <Grid item md={4}>
-                photo 1
-            </Grid>
-            <Grid item md={4}>
-                photo 2
-            </Grid>
-            <Grid item md={4}>
-                photo 3
-            </Grid>
-          </Grid>
-        <Box textAlign='center'>
+        <Box textAlign='center' pb={5}>
           <Button href="test" className='button'>Try it out</Button>
         </Box>
         <Exercises muscles={data} />

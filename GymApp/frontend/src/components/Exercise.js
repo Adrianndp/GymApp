@@ -9,12 +9,6 @@ export default function Exercise(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea href={`api/exercises/${props.name}`}>
-        <CardMedia
-          component="img"
-          height="auto"
-          image="static/images/deadlift.jpg"
-          alt="green iguana"
-        />
         <CardContent>
           <Typography gutterBottom component="div" justifyContent="center">
             {props.name}

@@ -12,7 +12,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <Box width="100%">
+            <Box width="100%" background="#f4f4f4">
                 <Navbar />
                 <HomePage />
             </Box>

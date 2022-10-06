@@ -6,20 +6,24 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
 export const routineForm = () => {
+    const [value, setValue] = React.useState('female');
 
-    
-  return (
+    const handleChange = (event) => {
+      setValue(event.target.value);
+    };
+
+    return (
     <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-        <RadioGroup
-            aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue="female"
-            name="radio-buttons-group"
-        >
-            <FormControlLabel value="female" control={<Radio />} label="Female" />
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-        </RadioGroup>
+      <FormLabel id="demo-controlled-radio-buttons-group">Gender</FormLabel>
+      <RadioGroup
+        aria-labelledby="demo-controlled-radio-buttons-group"
+        name="controlled-radio-buttons-group"
+        value={value}
+        onChange={handleChange}
+      >
+        <FormControlLabel value="female" control={<Radio />} label="Female" />
+        <FormControlLabel value="male" control={<Radio />} label="Male" />
+      </RadioGroup>
     </FormControl>
   )
 }

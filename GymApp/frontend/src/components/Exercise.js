@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react'
+import { Container } from '@mui/material';
 import { useParams } from "react-router-dom";
 
 export const Exercise = () =>{
@@ -18,7 +19,9 @@ export const Exercise = () =>{
 
     return (
         <div>
-            { data }
+            <Container maxWidth="md">
+                { data }
+            </Container>
         </div>
         
     )

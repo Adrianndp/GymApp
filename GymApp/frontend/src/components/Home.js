@@ -10,7 +10,7 @@ export const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(()=>{
-      fetch("/api/get_muscles")
+      fetch("/api/muscleGroup")
         .then(response => response.json())
         .then(json => setData(json.data))
         .catch(err => {

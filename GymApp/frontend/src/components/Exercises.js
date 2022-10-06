@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+import { Typography, Grid, Card, CardContent, CardActionArea } from '@mui/material';
 
 
 export const Exercises = (props) => {
@@ -14,7 +14,7 @@ export const Exercises = (props) => {
                 {props.muscles.map(d => (
                     <Grid item xs={6} md={4}>
                         <Card sx={{ maxWidth: 345 }}>
-                            <CardActionArea style={{ background: '#1976d2',  color: 'white' }} href={`api/exercises/${d}`}>
+                            <CardActionArea style={{ background: '#1976d2',  color: 'white' }} href={`muscleGroup/${d}`}>
                                 <CardContent>
                                 <Typography gutterBottom component="div" justifyContent="center">
                                     {d}

@@ -37,8 +37,8 @@ def muscle_list_view(request):
 def equipment_list_view(request):
     return JsonResponse({'data': EquipmentEnum.list()})
 
-def exercises(request, exercise):
-     return JsonResponse({'foo': exercise})
+def exercises(request, muscle):
+     return JsonResponse({'data': [muscle]})
 
   
         

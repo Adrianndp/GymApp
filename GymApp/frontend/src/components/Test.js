@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
 import { RoutineForm } from './RoutineForm';
 
-const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+const steps = ['Body mass index', 'Goal', 'Create your routine'];
 
 export default function Test() {
   const [activeStep, setActiveStep] = React.useState(0);

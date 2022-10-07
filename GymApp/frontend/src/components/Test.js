@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
-import { routineForm } from './routineForm';
+import { RoutineForm } from './RoutineForm';
 
 const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
@@ -91,7 +91,7 @@ export default function Test() {
         ) : (
           <React.Fragment>
             <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
-            <routineForm />
+            <RoutineForm />
             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
               <Button
                 color="inherit"

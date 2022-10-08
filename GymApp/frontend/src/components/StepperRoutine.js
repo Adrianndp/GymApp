@@ -52,13 +52,9 @@ export default function StepperRoutine() {
     });
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
   return (
-    <Container maxWidth="md">
-      <Box sx={{ marginTop: '50px', width: '100%'}}>
+    <Container maxWidth="md"> 
+      <Box sx={{ marginTop: '50px', width: '100%'}} component="form" autoComplete="off" noValidate>
         <Stepper activeStep={activeStep}>
           {steps.map((label, index) => {
             const stepProps = {};
@@ -85,7 +81,6 @@ export default function StepperRoutine() {
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
               <Box sx={{ flex: '1 1 auto' }} />
-              <Button onClick={handleReset}>Reset</Button>
             </Box>
           </React.Fragment>
         ) : (

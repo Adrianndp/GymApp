@@ -10,7 +10,7 @@ import { RoutineForm } from './RoutineForm';
 
 const steps = ['Body mass index', 'Goal', 'Create your routine'];
 
-export default function Test() {
+export default function StepperRoutine() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 

@@ -23,7 +23,7 @@ export const Home = () => {
       <LazyHero imageSrc="static/images/hero.webp" minHeight="100vh" opacity="0.7">
       <h1>Can you feel the Heat? </h1>
         <Box textAlign='center' pb={5}>
-          <Button href="test" className='button'>Design your own routine for free</Button>
+          <Button href="routine" className='button'>Design your own routine for free</Button>
         </Box>
       </LazyHero>
       <Container maxWidth="md">

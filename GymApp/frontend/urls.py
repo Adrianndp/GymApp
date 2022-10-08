@@ -3,6 +3,6 @@ from .views import index
 
 urlpatterns = [
     path('', index),
-    path('test', index),
+    path('routine', index),
     path('muscleGroup/<str:muscle>/', index),
 ]

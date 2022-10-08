@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
-import { RoutineForm } from './RoutineForm';
+import { StepperForms } from './StepperForms';
 
 const steps = ['Body mass index', 'Goal', 'Create your routine'];
 
@@ -91,7 +91,7 @@ export default function StepperRoutine() {
         ) : (
           <React.Fragment>
             <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
-            <RoutineForm />
+            <StepperForms />
             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
               <Button
                 color="inherit"

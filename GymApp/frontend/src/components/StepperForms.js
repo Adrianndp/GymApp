@@ -6,13 +6,11 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 
-export const RoutineForm = () => {
+const FirstForm = () => {
     const [value, setValue] = React.useState('female');
-
     const handleChange = (event) => {
       setValue(event.target.value);
     };
-
     return (
     <FormControl>
       <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
@@ -43,4 +41,15 @@ export const RoutineForm = () => {
       <TextField id="weight" label="Weight" variant="standard" />
     </FormControl>
   )
+}
+
+
+export const StepperForms = () => {
+
+  return (
+    <div>
+      <FirstForm />
+    </div>
+
+  );
 }

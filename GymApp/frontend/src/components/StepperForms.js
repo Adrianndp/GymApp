@@ -44,12 +44,11 @@ const FirstForm = () => {
 }
 
 
-export const StepperForms = () => {
-
-  return (
-    <div>
-      <FirstForm />
-    </div>
-
-  );
+export const StepperForms = (props) => {
+  if (props.step === 1) {
+    return( <FirstForm />);
+  }
+  else {
+    return(<div></div>);
+  }
 }

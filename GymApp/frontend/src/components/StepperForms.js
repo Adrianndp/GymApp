@@ -1,12 +1,5 @@
 import React from 'react'
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
-import InputAdornment from '@mui/material/InputAdornment';
+import { Typography, Grid, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel, TextField, Box, InputAdornment } from '@mui/material';
 import PricingCardDemo from './PricingCardDemo';
 
 const FirstForm = () => {
@@ -68,11 +61,23 @@ const FirstForm = () => {
 
 
 export const StepperForms = (props) => {
+
+  const plans = ['Basic', 'Medium', 'Profesional'];
+  const prices = ['FREE', '$ 19.99', '$ 59.99']
   if (props.step === 1) {
     return( <FirstForm />);
   }
-  else if (props.step === 2) {
-    return( <PricingCardDemo />);
+  else if (props.step === 3) {
+    <PricingCardDemo />
+    return(<Typography pt={5} pb={10}>
+      <Grid container spacing={4}  justifyContent="center" alignItems="center">
+          {plans.map(p => (
+              <Grid item xs={12} md={4}>
+                  <PricingCardDemo plan={p} />
+              </Grid>
+          ))} 
+      </Grid>
+  </Typography> );
   }
   else {
     return(<div></div>);

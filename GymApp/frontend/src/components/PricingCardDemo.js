@@ -6,7 +6,6 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
   root: {
     borderRadius: 12,
-    minWidth: 256,
     textAlign: 'center',
   },
   header: {
@@ -25,11 +24,11 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const PricingCardDemo = React.memo(function PricingCard() {
+export const PricingCardDemo = React.memo(function PricingCard(props) {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
-      <CardHeader title="Basic Plan" className={classes.header} />
+      <CardHeader title={props.plan} className={classes.header} />
       <Divider variant="middle" />
       <CardContent>
         <Typography variant="h4" align="center">

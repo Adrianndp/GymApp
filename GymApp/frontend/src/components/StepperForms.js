@@ -7,6 +7,7 @@ import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import InputAdornment from '@mui/material/InputAdornment';
+import PricingCardDemo from './PricingCardDemo';
 
 const FirstForm = () => {
     const [value, setValue] = React.useState('female');
@@ -69,6 +70,9 @@ const FirstForm = () => {
 export const StepperForms = (props) => {
   if (props.step === 1) {
     return( <FirstForm />);
+  }
+  else if (props.step === 2) {
+    return( <PricingCardDemo />);
   }
   else {
     return(<div></div>);
